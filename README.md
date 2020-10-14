@@ -1,4 +1,4 @@
-### Hi there, I'm Pawan Gond - aka [wildcard][website] 👋
+### Hi there, I'm Pawan Gond - aka [Wildcard][website] 👋
 
 ![Website](https://img.shields.io/website?label=RecterGaming.com&logo=Recter%20Gaming&style=for-the-badge&url=https%3A%2F%2Frectergaming.com)
 ![Twitter Follow](https://img.shields.io/twitter/follow/pawangond7?color=1da1f2&logo=Twitter&style=for-the-badge)
