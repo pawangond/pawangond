@@ -47,7 +47,9 @@
 <br />
 <br />
 
---
+---
+
+![Pawan's github stats](https://github-readme-stats.vercel.app/api?username=pawangond&show_icons=true&theme=radical)
 
 [website]: https://rectergaming.com
 [course]: https://rectergaming.com
