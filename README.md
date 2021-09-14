@@ -8,7 +8,7 @@
 - 🔭 Recter Gaming: [Checkout Recter Gaming][course]!
 - 🌱 I’m currently learning server security and optimizations
 - 👯 I’m looking to collaborate with other content creators
-- 🥅 2020 Goals: Web security and Server management
+- 🥅 2021 Goals: Web security and Server management
 - ⚡ Game? : Join now
 
 
