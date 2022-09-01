@@ -3,12 +3,11 @@
 ![Website](https://img.shields.io/website?label=RecterGaming.com&logo=Recter%20Gaming&style=for-the-badge&url=https%3A%2F%2Frectergaming.com)
 ![Twitter Follow](https://img.shields.io/twitter/follow/pawangond7?color=1da1f2&logo=Twitter&style=for-the-badge)
 
-## I'm a Student, Developer and Founder of Recter Gaming!!
 
-- 🔭 Recter Gaming: [Checkout Recter Gaming][course]!
+
 - 🌱 I’m currently learning server security and optimizations
-- 👯 I’m looking to collaborate with other content creators
-- 🥅 2021 Goals: Web security and Server management
+- 👯 I’m looking to collaborate with other developers
+- 🥅 2022 Goals: Web security and Server management
 - ⚡ Game? : Join now
 
 
