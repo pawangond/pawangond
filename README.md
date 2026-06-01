@@ -4,15 +4,16 @@
 </p>
 
 <h1 align="center">Pawan Gond</h1>
-<p align="center">
-  <a href="https://pawangond.com"><img src="https://img.shields.io/badge/pawangond.com-00f5ff?style=for-the-badge&logo=internet-explorer&logoColor=05070a" alt="Website" /></a>
-  <a href="mailto:contact@pawangond.com"><img src="https://img.shields.io/badge/contact@pawangond.com-8a2be2?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://linkedin.com/in/pawangond"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
 
 <p align="center">
   <b>Site Reliability Engineer • DevOps Architect • Senior Creative Technologist</b><br />
   <i>"I build systems that heal themselves." • Bridging the gap between brilliant code and stunning design.</i>
+</p>
+
+<p align="center">
+  [![Website](https://img.shields.io/badge/pawangond.com-00f5ff?style=for-the-badge&logo=google-chrome&logoColor=05070a)](https://pawangond.com)
+  [![Email](https://img.shields.io/badge/contact@pawangond.com-8a2be2?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@pawangond.com)
+  [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pawangond)
 </p>
 
 <p align="center">
@@ -21,7 +22,32 @@
 
 ---
 
-## 📊 SRE OBSERVABILITY DASHBOARD
+## 📈 PROACTIVE SELF-HEALING ARCHITECTURE
+
+Here is the operational schematic of the automated **Incident Triage &amp; Self-Healing Pipeline** I architected, demonstrating the dynamic synergy between reliability telemetry and modern cloud execution.
+
+```mermaid
+graph TD
+    %% Base Color Styling for Dark Mode Compatibility
+    style A fill:#161b22,stroke:#ff3366,stroke-width:2px,color:#ffffff
+    style B fill:#161b22,stroke:#00f5ff,stroke-width:1.5px,color:#ffffff
+    style C fill:#161b22,stroke:#8a2be2,stroke-width:1.5px,color:#ffffff
+    style D fill:#161b22,stroke:#39ff14,stroke-width:2px,color:#ffffff
+    style E fill:#0d1117,stroke:#1f242c,stroke-width:1px,color:#8b949e
+    style F fill:#161b22,stroke:#00f5ff,stroke-width:1.5px,color:#ffffff
+
+    A[⚠️ Severe-1 Incident Spike Detected] -->|Telemetry Alerts| B(📊 Prometheus & Grafana Monitoring)
+    B -->|Webhook Dispatch| C(💬 Slack-ChatOps SRE Bot)
+    C -->|Trigger Action| F[🚀 Serverless SRE Bot / AWS Lambda]
+    F -->|RAG Vector Query| E[(🧠 Qdrant Vector Database)]
+    E -->|Fetch Resolution Runbook| F
+    F -->|Hot-Patch Payload Rollout| D[✅ Hot-Fix Auto-Applied & Restored]
+    D -.->|MTTR Reduced by 30%| A
+```
+
+---
+
+## 📊 SRE OBSERVABILITY METRICS
 
 <div align="center">
   <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
@@ -70,6 +96,70 @@
     </tbody>
   </table>
 </div>
+
+---
+
+## 💻 INTERACTIVE SRE CHATOPS SIMULATOR
+
+Click the diagnostic console commands below to execute real-time terminal diagnostics and trigger automated self-healing resolution sequences in the simulated sandbox shell.
+
+<blockquote>
+<pre>
+pawangond@reliability-node:~$ system_diagnostics --menu
+===========================================================
+               SRE CHATOPS INTERACTIVE CONSOLE
+===========================================================
+Select a node log query or trigger automated self-healing:
+</pre>
+
+<!-- NESTED DETAILS FOR COMMAND 1 -->
+<details style="margin-left: 20px; margin-bottom: 10px;">
+<summary><b>💾 <code>&gt; [1] query_cluster_scale --hosts</code></b></summary>
+<br />
+<pre>
+Executing: query_cluster_scale --hosts...
+[Telemetry] Contacting PubMatic bare-metal production nodes...
+[Telemetry] Host scan complete: 15,394 active servers registered.
+[Telemetry] Availability Index: 99.99% UP
+[Telemetry] Network Topology: Multi-Region Active-Active Mesh
+[STATUS] All telemetry agents reporting healthy.
+</pre>
+</details>
+
+<!-- NESTED DETAILS FOR COMMAND 2 -->
+<details style="margin-left: 20px; margin-bottom: 10px;">
+<summary><b>⚡ <code>&gt; [2] trigger_ai_self_heal --incident-id S1-9481</code></b></summary>
+<br />
+<pre>
+Executing: trigger_ai_self_heal --incident-id S1-9481...
+[ALERT] Severity-1 Anomaly: 340ms latency threshold breached on ap-southeast-1.
+[CHAT] Invoking AWS Lambda ChatOps bot payload...
+[RAG] Vector database search initiated against Qdrant DB.
+[RAG] Retrieved matching runbook: "Route-Rebalance-SE-v2" (Simulated Confidence: 98%)
+[HEAL] Deploying routing failover block...
+[SUCCESS] Route updated. Latency stabilized to 14ms.
+[STATUS] MTTR minimized by 30%. Incident S1-9481 marked RESOLVED.
+</pre>
+</details>
+
+<!-- NESTED DETAILS FOR COMMAND 3 -->
+<details style="margin-left: 20px; margin-bottom: 10px;">
+<summary><b>💵 <code>&gt; [3] calculate_finops_savings --year 2025</code></b></summary>
+<br />
+<pre>
+Executing: calculate_finops_savings --year 2025...
+[FinOps] Auditing AWS CloudWatch compute and storage metrics...
+[FinOps] Calculating Graviton processor architecture savings...
+[FinOps] Scanning MySQL and MongoDB multi-region disaster recovery storage tiers...
+===========================================================
+            FINOPS SAVINGS REPORT (LogiNext Infrastructure)
+===========================================================
+- AWS Graviton Migration Savings:     30% Compute Expense Reduction
+- Database Block Storage DR Savings:  40% Storage Cap Optimization
+- Total Cost-to-Performance Ratio:    70% Cost Efficiency Achieved.
+</pre>
+</details>
+</blockquote>
 
 ---
 

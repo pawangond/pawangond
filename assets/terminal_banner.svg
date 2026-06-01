@@ -1,315 +1,382 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 340" width="100%" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 350" width="100%" height="350">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Obsidian & Neon Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0d14" />
-      <stop offset="100%" stop-color="#05070a" />
+      <stop offset="0%" stop-color="#07090e" />
+      <stop offset="50%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#040508" />
     </linearGradient>
-    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#141923" />
-      <stop offset="100%" stop-color="#0e121a" />
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121824" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0b0e17" stop-opacity="0.9" />
     </linearGradient>
     <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f5ff" />
       <stop offset="50%" stop-color="#8a2be2" />
       <stop offset="100%" stop-color="#39ff14" />
     </linearGradient>
-    
-    <!-- Pulse Effect for Uptime Ring -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <linearGradient id="heartbeatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#00f5ff" />
+      <stop offset="100%" stop-color="#39ff14" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Filters for Futuristic Glows -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="greenGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="redGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="pinkGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
+    <!-- CDATA wrapped stylesheet to prevent XML parsing issues -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;family=Outfit:wght@400;600;800&amp;display=swap');
+      <![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@400;600;800&display=swap');
       
       .terminal-text {
         font-family: 'Fira Code', 'Courier New', Courier, monospace;
-        font-size: 13px;
-        fill: #c9d1d9;
+        font-size: 12.5px;
+        fill: #99a2bc;
       }
       .panel-header-text {
         font-family: 'Outfit', -apple-system, sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        fill: #8b949e;
-        letter-spacing: 1px;
+        font-size: 11.5px;
+        font-weight: 800;
+        fill: #00f5ff;
+        letter-spacing: 2px;
+        filter: drop-shadow(0 0 1px rgba(0, 245, 255, 0.4));
       }
       .metric-label {
         font-family: 'Outfit', -apple-system, sans-serif;
-        font-size: 12px;
-        fill: #8b949e;
-        font-weight: 400;
+        font-size: 11px;
+        fill: #727b93;
+        font-weight: 600;
+        letter-spacing: 1px;
       }
       .metric-value {
         font-family: 'Outfit', -apple-system, sans-serif;
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 800;
         fill: #ffffff;
       }
 
-      /* CLI Output Typing Animation Timeline (Total Loop: 24 seconds) */
-      .prompt { fill: #58a6ff; font-weight: bold; }
+      /* Animated heart wave (CPU Oscilloscope) */
+      @keyframes heartbeat {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .heartbeat-line {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: heartbeat 6s infinite linear;
+        transition: stroke 0.3s, filter 0.3s, stroke-width 0.3s;
+      }
+
+      /* Prompt colors */
+      .prompt { fill: #8a2be2; font-weight: bold; }
       .cmd { fill: #00f5ff; font-weight: 500; }
       .ok { fill: #39ff14; font-weight: bold; }
-      .info { fill: #8a2be2; font-weight: bold; }
+      .info { fill: #00f5ff; font-weight: bold; }
       .warn { fill: #ffaa00; font-weight: bold; }
-      .alert { fill: #ff3366; font-weight: bold; filter: drop-shadow(0 0 2px #ff3366); }
+      .alert { fill: #ff3366; font-weight: bold; }
 
-      /* Animation keyframes for CLI logs */
-      @keyframes lineFade {
-        0%, 100% { opacity: 0; transform: translateY(5px); }
-        /* Line 1 types at 0.5s */
-        1.5%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade2 {
-        0%, 7.5%, 100% { opacity: 0; transform: translateY(5px); }
-        9%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade3 {
-        0%, 14.5%, 100% { opacity: 0; transform: translateY(5px); }
-        16%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade4 {
-        0%, 22.5%, 100% { opacity: 0; transform: translateY(5px); }
-        24%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade5 {
-        0%, 30.5%, 100% { opacity: 0; transform: translateY(5px); }
-        32%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade6 {
-        0%, 39.5%, 100% { opacity: 0; transform: translateY(5px); }
-        41%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade7 {
-        0%, 48.5%, 100% { opacity: 0; transform: translateY(5px); }
-        50%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade8 {
-        0%, 60.5%, 100% { opacity: 0; transform: translateY(5px); }
-        62%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade9 {
-        0%, 72.5%, 100% { opacity: 0; transform: translateY(5px); }
-        74%, 98% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFade10 {
-        0%, 82.5%, 100% { opacity: 0; transform: translateY(5px); }
-        84%, 98% { opacity: 1; transform: translateY(0); }
-      }
+      /* Sequential console logging timeline (24s loop) */
+      @keyframes console1  { 0%, 100% { opacity: 0; } 1%, 98% { opacity: 1; } }
+      @keyframes console2  { 0%, 8% { opacity: 0; } 9%, 98% { opacity: 1; } }
+      @keyframes console3  { 0%, 16% { opacity: 0; } 17%, 98% { opacity: 1; } }
+      @keyframes console4  { 0%, 24% { opacity: 0; } 25%, 98% { opacity: 1; } }
+      @keyframes console5  { 0%, 32% { opacity: 0; } 33%, 98% { opacity: 1; } }
+      @keyframes console6  { 0%, 41% { opacity: 0; } 42%, 98% { opacity: 1; } }
+      @keyframes console7  { 0%, 50% { opacity: 0; } 51%, 98% { opacity: 1; } }
+      @keyframes console8  { 0%, 61% { opacity: 0; } 62%, 98% { opacity: 1; } }
+      @keyframes console9  { 0%, 72% { opacity: 0; } 73%, 98% { opacity: 1; } }
+      @keyframes console10 { 0%, 82% { opacity: 0; } 83%, 98% { opacity: 1; } }
 
-      .log-1 { animation: lineFade 24s infinite; }
-      .log-2 { animation: lineFade2 24s infinite; }
-      .log-3 { animation: lineFade3 24s infinite; }
-      .log-4 { animation: lineFade4 24s infinite; }
-      .log-5 { animation: lineFade5 24s infinite; }
-      .log-6 { animation: lineFade6 24s infinite; }
-      .log-7 { animation: lineFade7 24s infinite; }
-      .log-8 { animation: lineFade8 24s infinite; }
-      .log-9 { animation: lineFade9 24s infinite; }
-      .log-10 { animation: lineFade10 24s infinite; }
+      .l-1 { animation: console1 24s infinite; }
+      .l-2 { animation: console2 24s infinite; }
+      .l-3 { animation: console3 24s infinite; }
+      .l-4 { animation: console4 24s infinite; }
+      .l-5 { animation: console5 24s infinite; }
+      .l-6 { animation: console6 24s infinite; }
+      .l-7 { animation: console7 24s infinite; }
+      .l-8 { animation: console8 24s infinite; }
+      .l-9 { animation: console9 24s infinite; }
+      .l-10 { animation: console10 24s infinite; }
 
-      /* Blinking terminal cursor */
-      @keyframes blink {
-        0%, 49%, 100% { opacity: 0; }
-        50%, 99% { opacity: 1; }
-      }
-      .cursor {
-        animation: blink 1s infinite;
-        fill: #00f5ff;
-      }
+      @keyframes blinker { 0%, 49%, 100% { opacity: 0; } 50%, 99% { opacity: 1; } }
+      .cli-cursor { animation: blinker 1s infinite; fill: #00f5ff; }
 
-      /* Live Observability Panel Animations */
-      @keyframes radialDraw {
+      /* Uptime Arc gauge loading */
+      @keyframes arcDraw {
         0%, 100% { stroke-dashoffset: 220; }
-        10%, 90% { stroke-dashoffset: 0.2; }
+        15%, 85% { stroke-dashoffset: 15; }
       }
-      .uptime-ring {
+      .gauge-ring {
         stroke-dasharray: 220;
         stroke-dashoffset: 220;
         transform: rotate(-90deg);
-        transform-origin: 675px 115px;
-        animation: radialDraw 24s infinite ease-in-out;
+        transform-origin: 675px 120px;
+        animation: arcDraw 24s infinite cubic-bezier(0.4, 0, 0.2, 1);
+        transition: stroke 0.4s, filter 0.4s;
       }
 
-      /* Server Nodes Matrix Pulse & Error Simulation */
-      @keyframes nodePulseGreen {
-        0%, 100% { fill: #39ff14; fill-opacity: 0.7; }
-        50% { fill: #39ff14; fill-opacity: 1; filter: drop-shadow(0 0 2px #39ff14); }
+      /* Server cluster pulse and self-healing action */
+      @keyframes serverGreen {
+        0%, 100% { fill: #39ff14; fill-opacity: 0.6; }
+        50% { fill: #39ff14; fill-opacity: 1; }
       }
-      @keyframes nodeFailing {
-        0%, 48.4%, 72.6%, 100% { fill: #39ff14; fill-opacity: 0.7; }
-        48.5%, 72.5% { fill: #ff3366; fill-opacity: 1; filter: drop-shadow(0 0 4px #ff3366); }
+      @keyframes serverTarget {
+        0%, 50%, 73%, 100% { fill: #39ff14; fill-opacity: 0.6; }
+        51%, 72% { fill: #ff3366; fill-opacity: 1; filter: url(#redGlow); }
       }
+      .node-ok { animation: serverGreen 3s infinite ease-in-out; transition: fill 0.2s, fill-opacity 0.2s, filter 0.2s; }
+      .node-ok-slow { animation: serverGreen 4.5s infinite ease-in-out; transition: fill 0.2s, fill-opacity 0.2s, filter 0.2s; }
+      .node-unstable { animation: serverTarget 24s infinite linear; transition: fill 0.2s, fill-opacity 0.2s, filter 0.2s; }
 
-      .node-ok { animation: nodePulseGreen 3s infinite ease-in-out; }
-      .node-ok-slow { animation: nodePulseGreen 4s infinite ease-in-out; }
-      /* Simulated server incident that triggers at 48.5% (approx 11.6s) and heals at 72.5% (approx 17.4s) */
-      .node-target { animation: nodeFailing 24s infinite linear; }
-
-      /* Dashboard bar progress */
-      @keyframes barGrow {
+      /* ProgressBar scaling */
+      @keyframes barExpansion {
         0%, 100% { width: 0px; }
-        20%, 90% { width: 140px; }
+        25%, 85% { width: 140px; }
       }
-      .bar-fill {
-        animation: barGrow 24s infinite ease-in-out;
+      .bar-progress { animation: barExpansion 24s infinite ease-in-out; }
+
+      /* ================= CREATIVE INTERACTIVE HOVER STYLES ================= */
+      
+      /* 1. Oscilloscope Interaction */
+      .heartbeat-line:hover {
+        stroke: #ff3366 !important;
+        stroke-width: 3.5px !important;
+        filter: url(#pinkGlow) !important;
+        cursor: pointer;
       }
 
+      /* 2. Uptime Group Hover */
+      .uptime-group { cursor: pointer; }
+      .uptime-group:hover .gauge-ring {
+        stroke: #8a2be2 !important;
+        filter: url(#cyanGlow) !important;
+      }
+      .uptime-group:hover .gauge-val {
+        fill: #00f5ff !important;
+        filter: drop-shadow(0 0 2px #00f5ff);
+      }
+      .uptime-group:hover .gauge-status {
+        fill: #8a2be2 !important;
+        filter: drop-shadow(0 0 2px #8a2be2);
+      }
+
+      /* 3. Server Grid Node Interaction */
+      .server-node { cursor: crosshair; }
+      .server-node:hover {
+        fill: #00f5ff !important;
+        fill-opacity: 1 !important;
+        filter: url(#cyanGlow) !important;
+      }
+      .node-unstable:hover {
+        fill: #ffaa00 !important;
+        fill-opacity: 1 !important;
+        filter: url(#cyanGlow) !important;
+      }
+
+      /* 4. Terminal Console Hover */
+      .terminal-frame { transition: stroke 0.3s, filter 0.3s; }
+      .terminal-window:hover .terminal-frame {
+        stroke: #8a2be2 !important;
+        filter: drop-shadow(0 0 4px rgba(138, 43, 226, 0.4));
+      }
+      ]]>
     </style>
   </defs>
 
-  <!-- 1. Window Frame -->
-  <rect x="2" y="2" width="846" height="336" rx="10" fill="url(#bgGrad)" stroke="#1a2130" stroke-width="1.5" />
+  <!-- Deep Obsidian background grid -->
+  <rect x="0" y="0" width="850" height="350" rx="16" fill="url(#bgGrad)" stroke="#172237" stroke-width="2" />
+  
+  <!-- Subtle futuristic matrix dots -->
+  <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="0.8" fill="#1b2436" />
+  </pattern>
+  <rect width="850" height="350" fill="url(#dotPattern)" rx="16" />
 
-  <!-- 2. Window Header Bar -->
-  <rect x="2" y="2" width="846" height="36" rx="10" fill="url(#headerGrad)" stroke="#1a2130" stroke-width="0.75" />
-  <circle cx="18" cy="20" r="5.5" fill="#ff5f56" />
-  <circle cx="34" cy="20" r="5.5" fill="#ffbd2e" />
-  <circle cx="50" cy="20" r="5.5" fill="#27c93f" />
+  <!-- Neon ambient glow effects behind panels -->
+  <circle cx="100" cy="180" r="120" fill="#8a2be2" fill-opacity="0.08" filter="url(#greenGlow)" />
+  <circle cx="700" cy="150" r="100" fill="#00f5ff" fill-opacity="0.06" filter="url(#cyanGlow)" />
 
-  <!-- Terminal Label -->
-  <text x="425" y="24" font-family="'Outfit', sans-serif" font-weight="600" font-size="12" fill="#8b949e" text-anchor="middle" letter-spacing="1.5px">
-    PAWANGOND // SRE OPERATIONAL DECK
+  <!-- ================= GLASSMORPHIC HEADER BAR ================= -->
+  <rect x="15" y="15" width="820" height="42" rx="10" fill="url(#panelGrad)" stroke="#222e47" stroke-width="1" />
+  <circle cx="35" cy="36" r="6" fill="#ff5f56" />
+  <circle cx="51" cy="36" r="6" fill="#ffbd2e" />
+  <circle cx="67" cy="36" r="6" fill="#27c93f" />
+
+  <!-- Terminal/Console Label -->
+  <text x="425" y="41" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#8d9eb5" text-anchor="middle" letter-spacing="2.5px">
+    PAWANGOND // SRE OBSERVABILITY CONSOLE v2.1
   </text>
+  
+  <!-- Green network ping status -->
+  <g transform="translate(760, 28)">
+    <rect width="75" height="16" rx="8" fill="#0e1b20" stroke="#1cffbc" stroke-width="0.75" />
+    <circle cx="10" cy="8" r="3" fill="#1cffbc" filter="url(#cyanGlow)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="20" y="11" font-family="'Fira Code', monospace" font-size="8.5" fill="#1cffbc" font-weight="bold">ONLINE</text>
+  </g>
 
-  <!-- Connection Status Node -->
-  <circle cx="815" cy="20" r="4" fill="#39ff14" filter="url(#glow)" />
-  <text x="804" y="23" font-family="'Fira Code', monospace" font-size="9" fill="#39ff14" text-anchor="end">NODE_ACTIVE</text>
+  <!-- ================= LEFT PANEL: GLASSMORPHIC CLI TERMINAL ================= -->
+  <g transform="translate(15, 72)" class="terminal-window">
+    <!-- Terminal Background Panel -->
+    <rect x="0" y="0" width="530" height="262" rx="12" fill="url(#panelGrad)" stroke="#1e2a42" stroke-width="1.25" class="terminal-frame" />
+    
+    <!-- Code scanlines -->
+    <line x1="1" y1="40" x2="529" y2="40" stroke="#182338" stroke-width="0.5" />
+    <line x1="1" y1="80" x2="529" y2="80" stroke="#182338" stroke-width="0.5" />
+    <line x1="1" y1="120" x2="529" y2="120" stroke="#182338" stroke-width="0.5" />
+    <line x1="1" y1="160" x2="529" y2="160" stroke="#182338" stroke-width="0.5" />
+    <line x1="1" y1="200" x2="529" y2="200" stroke="#182338" stroke-width="0.5" />
 
-  <!-- Vertical Divider Panel -->
-  <line x1="560" y1="38" x2="560" y2="338" stroke="#161b22" stroke-width="1.5" />
-
-  <!-- ================= LEFT PANEL: TERMINAL CONSOLE ================= -->
-  <svg x="10" y="38" width="540" height="300">
-    <!-- Grid scan lines overlay -->
-    <path d="M 0,10 L 540,10 M 0,20 L 540,20 M 0,30 L 540,30 M 0,40 L 540,40 M 0,50 L 540,50 M 0,60 L 540,60 M 0,70 L 540,70 M 0,80 L 540,80 M 0,90 L 540,90 M 0,100 L 540,100 M 0,110 L 540,110 M 0,120 L 540,120 M 0,130 L 540,130 M 0,140 L 540,140 M 0,150 L 540,150 M 0,160 L 540,160 M 0,170 L 540,170 M 0,180 L 540,180 M 0,190 L 540,190 M 0,200 L 540,200 M 0,210 L 540,210 M 0,220 L 540,220 M 0,230 L 540,230 M 0,240 L 540,240 M 0,250 L 540,250 M 0,260 L 540,260 M 0,270 L 540,270 M 0,280 L 540,280" 
-          stroke="#161b22" stroke-width="0.5" opacity="0.4" />
-
-    <!-- CLI Commands Group -->
-    <g class="terminal-text" transform="translate(15, 25)">
+    <!-- CLI Logs -->
+    <g class="terminal-text" transform="translate(18, 28)">
       <!-- Line 1 -->
-      <g class="log-1">
-        <text x="0" y="0"><tspan class="prompt">pawangond@ops-control:~$</tspan> <tspan class="cmd">init_reliability_system.sh --live</tspan></text>
+      <g class="l-1">
+        <text x="0" y="0"><tspan class="prompt">pawangond@reliability:~$</tspan> <tspan class="cmd">init_observability.sh --proactive</tspan></text>
       </g>
       
       <!-- Line 2 -->
-      <g class="log-2">
-        <text x="0" y="20"><tspan class="info">[INFO]</tspan> Initializing self-healing observability loops...</text>
+      <g class="l-2">
+        <text x="0" y="20"><tspan class="info">[SRE]</tspan> Activating active self-healing observability pipelines...</text>
       </g>
 
       <!-- Line 3 -->
-      <g class="log-3">
-        <text x="0" y="40"><tspan class="info">[INFO]</tspan> Establishing telemetry endpoints to PubMatic Node cluster...</text>
+      <g class="l-3">
+        <text x="0" y="40"><tspan class="info">[SRE]</tspan> Loading endpoints: PubMatic core cluster (15k+ instances)...</text>
       </g>
 
       <!-- Line 4 -->
-      <g class="log-4">
-        <text x="0" y="60"><tspan class="ok">[OK]</tspan> Connected to <tspan fill="#ffffff" font-weight="bold">15,000+ bare-metal &amp; cloud servers</tspan> (PubMatic Production).</text>
+      <g class="l-4">
+        <text x="0" y="60"><tspan class="ok">[OK]</tspan> Telemetry established with 15,000+ bare-metal and cloud servers.</text>
       </g>
 
       <!-- Line 5 -->
-      <g class="log-5">
-        <text x="0" y="80"><tspan class="info">[INFO]</tspan> Activating proactive AI Incident Responder (Qdrant Vector DB &amp; RAG)...</text>
+      <g class="l-5">
+        <text x="0" y="80"><tspan class="info">[AI]</tspan> Mounting Incident Responder (RAG Pipeline + Qdrant Vector DB)...</text>
       </g>
 
       <!-- Line 6 -->
-      <g class="log-6">
-        <text x="0" y="100"><tspan class="ok">[OK]</tspan> RAG pipeline active. MTTR minimized dynamically by 30%.</text>
+      <g class="l-6">
+        <text x="0" y="100"><tspan class="ok">[OK]</tspan> Proactive resolver initialized. MTTR reduction engine active (-30%).</text>
       </g>
 
       <!-- Line 7 -->
-      <g class="log-7">
-        <text x="0" y="120"><tspan class="alert">[ALERT] Severe-1 Incident: Latency anomaly detected on ap-southeast-1!</tspan></text>
+      <g class="l-7">
+        <text x="0" y="120"><tspan class="alert">[CRITICAL] Latency spike detected on ap-southeast-1 node cluster!</tspan></text>
       </g>
 
       <!-- Line 8 -->
-      <g class="log-8">
-        <text x="0" y="140"><tspan class="info">[HEAL]</tspan> AI-Responder dispatched resolution. Running self-heal hook via AWS Lambda...</text>
+      <g class="l-8">
+        <text x="0" y="140"><tspan class="warn">[HEAL]</tspan> Slack-ChatOps bot triggered. Invoking AWS Lambda hot-fix payload...</text>
       </g>
 
       <!-- Line 9 -->
-      <g class="log-9">
-        <text x="0" y="160"><tspan class="ok">[HEAL] Hot-patch applied. Latency returned to 14ms. Incident RESOLVED.</tspan></text>
+      <g class="l-9">
+        <text x="0" y="160"><tspan class="ok">[HEAL] Dynamic routing updated. System recovered successfully.</tspan></text>
       </g>
 
       <!-- Line 10 -->
-      <g class="log-10">
-        <text x="0" y="180"><tspan class="ok">[SUCCESS]</tspan> Global state healthy. System Uptime: <tspan fill="#ffffff" font-weight="bold">99.99%</tspan> | SLA: <tspan fill="#ffffff" font-weight="bold">99% compliant</tspan>.</text>
-        <text x="0" y="200"><tspan class="prompt">pawangond@ops-control:~$</tspan> <tspan class="cmd">sys_status --active</tspan><tspan class="cursor">_</tspan></text>
+      <g class="l-10">
+        <text x="0" y="180"><tspan class="ok">[STATUS]</tspan> Uptime: 99.99% | SLA: 99% compliant. Node metrics stabilized.</text>
+        <text x="0" y="204"><tspan class="prompt">pawangond@reliability:~$</tspan> <tspan class="cmd">sys_health --detailed</tspan><tspan class="cli-cursor">_</tspan></text>
       </g>
     </g>
-  </svg>
+  </g>
 
-  <!-- ================= RIGHT PANEL: OBSERVABILITY DASHBOARD ================= -->
-  <svg x="560" y="38" width="290" height="300">
-    <!-- Header -->
-    <text x="20" y="30" class="panel-header-text">SYSTEM HEALTH CONSOLE</text>
-    <line x1="20" y1="36" x2="250" y2="36" stroke="#1f242c" stroke-width="1" />
+  <!-- ================= RIGHT PANEL: ANALYTICS & MONITORING PANEL ================= -->
+  <g transform="translate(560, 72)">
+    <!-- Dashboard Background Panel -->
+    <rect x="0" y="0" width="275" height="262" rx="12" fill="url(#panelGrad)" stroke="#1e2a42" stroke-width="1.25" />
 
-    <!-- 1. Circular Uptime Gauge -->
-    <g transform="translate(0, 0)">
-      <!-- Gray background circle -->
-      <circle cx="65" cy="95" r="35" fill="none" stroke="#161b22" stroke-width="6" />
-      <!-- Animated primary uptime circle -->
-      <circle cx="65" cy="95" r="35" fill="none" stroke="#39ff14" stroke-width="6" 
-              class="uptime-ring" filter="url(#glow)" stroke-linecap="round" />
+    <!-- 1. Circular Uptime Gauge (Interactive Group) -->
+    <g class="uptime-group" transform="translate(20, 20)">
+      <circle cx="45" cy="45" r="32" fill="none" stroke="#162031" stroke-width="5" />
+      <circle cx="45" cy="45" r="32" fill="none" stroke="#39ff14" stroke-width="5" 
+              class="gauge-ring" stroke-linecap="round" filter="url(#greenGlow)" />
+      <text cx="45" cy="45" x="45" y="49" font-family="'Outfit', sans-serif" font-weight="800" font-size="12.5" fill="#ffffff" text-anchor="middle" class="gauge-val">99.99</text>
       
-      <!-- Inside circle metric -->
-      <text x="65" y="99" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" fill="#ffffff" text-anchor="middle">99.99%</text>
-      
-      <!-- Label Details -->
-      <text x="120" y="85" class="metric-label">UPTIME COMPLIANCE</text>
-      <text x="120" y="105" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" fill="#39ff14" filter="url(#glow)">STABLE</text>
+      <text x="92" y="36" class="metric-label">UPTIME</text>
+      <text x="92" y="55" font-family="'Outfit', sans-serif" font-weight="800" font-size="14.5" fill="#39ff14" filter="url(#greenGlow)" class="gauge-status">HEALTHY</text>
     </g>
 
-    <!-- Divider -->
-    <line x1="20" y1="155" x2="250" y2="155" stroke="#1f242c" stroke-width="1" />
+    <!-- Panel Divider -->
+    <line x1="20" y1="85" x2="255" y2="85" stroke="#162031" stroke-width="1" />
 
-    <!-- 2. Automated SRE Server Cluster (Interactive Green Grid with 1 Anomaly Node) -->
-    <text x="20" y="180" class="panel-header-text">ACTIVE SERVERS MATRIX (15K+ TOTAL)</text>
-    <g transform="translate(20, 195)">
-      <!-- Draw grid nodes (9 nodes for demonstration) -->
+    <!-- 2. CPU / Telemetry Oscilloscope Heartbeat -->
+    <g transform="translate(20, 92)">
+      <text x="0" y="12" class="panel-header-text" font-size="10.5">TELEMETRY OSCILLOSCOPE</text>
+      
+      <!-- Oscilloscope grid box -->
+      <rect x="0" y="20" width="235" height="42" rx="6" fill="#06090e" stroke="#162031" stroke-width="0.75" />
+      
+      <!-- Pulsing heartbeat wave -->
+      <path d="M 5,41 L 30,41 L 45,41 L 52,25 L 59,57 L 66,41 L 85,41 L 95,41 L 102,28 L 109,52 L 115,41 L 135,41 L 155,41 L 162,25 L 169,57 L 176,41 L 195,41 L 210,41" 
+            fill="none" stroke="url(#neonGlow)" stroke-width="1.75" class="heartbeat-line" />
+    </g>
+
+    <!-- Panel Divider -->
+    <line x1="20" y1="165" x2="255" y2="165" stroke="#162031" stroke-width="1" />
+
+    <!-- 3. Server Grid and Scale Status (Interactive Server matrix) -->
+    <g transform="translate(20, 175)">
+      <!-- Server Grid Matrix (12 servers represented) -->
       <!-- Row 1 -->
-      <rect x="0" y="0" width="16" height="16" rx="3" class="node-ok" fill="#39ff14" />
-      <rect x="22" y="0" width="16" height="16" rx="3" class="node-ok-slow" fill="#39ff14" />
-      <rect x="44" y="0" width="16" height="16" rx="3" class="node-ok" fill="#39ff14" />
-      <rect x="66" y="0" width="16" height="16" rx="3" class="node-ok" fill="#39ff14" />
-      <rect x="88" y="0" width="16" height="16" rx="3" class="node-ok-slow" fill="#39ff14" />
+      <rect x="0" y="0" width="13" height="13" rx="3.5" class="server-node node-ok" fill="#39ff14" />
+      <rect x="18" y="0" width="13" height="13" rx="3.5" class="server-node node-ok-slow" fill="#39ff14" />
+      <rect x="36" y="0" width="13" height="13" rx="3.5" class="server-node node-ok" fill="#39ff14" />
+      <rect x="54" y="0" width="13" height="13" rx="3.5" class="server-node node-ok-slow" fill="#39ff14" />
       
       <!-- Row 2 -->
-      <rect x="0" y="22" width="16" height="16" rx="3" class="node-ok-slow" fill="#39ff14" />
-      <rect x="22" y="22" width="16" height="16" rx="3" class="node-target" fill="#39ff14" /> <!-- Simulated unstable node -->
-      <rect x="44" y="22" width="16" height="16" rx="3" class="node-ok" fill="#39ff14" />
-      <rect x="66" y="22" width="16" height="16" rx="3" class="node-ok-slow" fill="#39ff14" />
-      <rect x="88" y="22" width="16" height="16" rx="3" class="node-ok" fill="#39ff14" />
+      <rect x="0" y="18" width="13" height="13" rx="3.5" class="server-node node-ok" fill="#39ff14" />
+      <rect x="18" y="18" width="13" height="13" rx="3.5" class="server-node node-unstable" fill="#39ff14" /> <!-- Simulated incident element -->
+      <rect x="36" y="18" width="13" height="13" rx="3.5" class="server-node node-ok" fill="#39ff14" />
+      <rect x="54" y="18" width="13" height="13" rx="3.5" class="server-node node-ok-slow" fill="#39ff14" />
 
-      <!-- Server Stack Metadata labels -->
-      <g transform="translate(120, 15)">
-        <text x="0" y="0" class="metric-label" font-size="10">INFRA SCALE:</text>
-        <text x="0" y="16" class="metric-value" font-size="13" fill="#ffffff" font-family="'Fira Code', monospace">15,000+ HOSTS</text>
+      <!-- Server grid statistics -->
+      <g transform="translate(85, 2)">
+        <text x="0" y="10" class="metric-label" font-size="9.5">CLUSTER SCALE</text>
+        <text x="0" y="27" class="metric-value" font-size="14.5" fill="#ffffff" font-family="'Fira Code', monospace">15K+ NODES</text>
       </g>
     </g>
 
-    <!-- Divider -->
-    <line x1="20" y1="250" x2="250" y2="250" stroke="#1f242c" stroke-width="1" />
+    <!-- Panel Divider -->
+    <line x1="20" y1="216" x2="255" y2="216" stroke="#162031" stroke-width="1" />
 
-    <!-- 3. Cost-Optimization indicator -->
-    <g transform="translate(20, 260)">
-      <text x="0" y="12" class="metric-label" font-size="11">CLOUD COST EFFICIENCY</text>
-      <!-- Horizontal progress track -->
-      <rect x="0" y="20" width="160" height="8" rx="4" fill="#161b22" />
-      <!-- Animated horizontal fill -->
-      <rect x="0" y="20" width="112" height="8" rx="4" fill="url(#neonGlow)" class="bar-fill" />
+    <!-- 4. Cost Reduction Progress tracker -->
+    <g transform="translate(20, 222)">
+      <text x="0" y="10" class="metric-label" font-size="9.5">CLOUD FINOPS EFFICIENCY</text>
+      <rect x="0" y="17" width="170" height="7" rx="3.5" fill="#141a26" />
+      <rect x="0" y="17" width="119" height="7" rx="3.5" fill="url(#neonGlow)" class="bar-progress" filter="url(#cyanGlow)" />
       
-      <!-- Percentage display -->
-      <text x="170" y="28" font-family="'Outfit', sans-serif" font-weight="800" font-size="13" fill="#00f5ff" filter="url(#glow)">70%</text>
+      <text x="182" y="24" font-family="'Outfit', sans-serif" font-weight="800" font-size="12.5" fill="#00f5ff" filter="url(#cyanGlow)">70%</text>
     </g>
-
-  </svg>
+  </g>
 </svg>
