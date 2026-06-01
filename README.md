@@ -1,30 +1,15 @@
-# <!-- High-End Observability Console Banner linked to Profile Home to prevent media viewers -->
-<p align="center">
-  <a href="https://github.com/pawangond">
-    <img src="./assets/terminal_banner.svg" width="850" alt="Pawan Gond - SRE Observability Console" />
-  </a>
-</p>
+# Pawan Gond
+### Site Reliability Engineer • DevOps Specialist
 
-<h1 align="center">Pawan Gond</h1>
+> "I build systems that heal themselves."
 
-<p align="center">
-  <b>Site Reliability Engineer • DevOps Specialist • Senior Creative Technologist</b><br />
-  <i>"I build systems that heal themselves." • Bridging the gap between brilliant code and stunning design.</i>
-</p>
-
-<p align="center">
-  [![Website](https://img.shields.io/badge/pawangond.com-00f5ff?style=for-the-badge&logo=google-chrome&logoColor=05070a)](https://pawangond.com)
-  [![Email](https://img.shields.io/badge/contact@pawangond.com-8a2be2?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@pawangond.com)
-  [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pawangond)
-</p>
-
-<p align="center">
-  Over <b>3+ years of professional experience</b> designing, automating, and operating high-throughput, low-latency production infrastructure alongside highly interactive client interfaces.
-</p>
+[![Website](https://img.shields.io/badge/pawangond.com-00f5ff?style=for-the-badge&logo=google-chrome&logoColor=05070a)](https://pawangond.com) [![Email](https://img.shields.io/badge/contact@pawangond.com-8a2be2?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@pawangond.com) [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pawangond)
 
 ---
 
-## 📊 SYSTEM METRICS &amp; IMPACT
+## 📊 SYSTEM METRICS &amp; INFRASTRUCTURE SCALE
+
+A telemetry overview of my SRE &amp; DevOps operational impact across high-throughput production runtimes.
 
 <div align="center">
   <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
@@ -50,7 +35,7 @@
         <td align="center" style="padding: 15px; border: 1px solid #1f242c; line-height: 1.6;">
           <font size="5" color="#ffffff"><b>70%</b></font><br />
           <font size="3" color="#8b949e">Cost Optimization Achieved</font><br />
-          <font size="2" color="#8a2be2"><i>Graviton Migrations &amp; Storage Tuning</i></font>
+          <font size="2" color="#8a2be2"><i>Graviton Migrations &amp; Capacity Tuning</i></font>
         </td>
       </tr>
       <tr>
@@ -78,7 +63,7 @@
 
 ## 🛠️ TECHNICAL ARSENAL &amp; SKILLS
 
-I leverage a highly optimized, modern toolchain focused on extreme throughput, high availability, and cohesive engineering designs.
+I leverage a highly optimized, modern toolchain focused on extreme throughput, high availability, and cohesive SRE/DevOps engineering.
 
 ### 🌐 Cloud &amp; Core Infrastructure Orchestration
 <p align="left">
@@ -112,43 +97,17 @@ I leverage a highly optimized, modern toolchain focused on extreme throughput, h
   <img src="https://img.shields.io/badge/Zabbix-E1251B?style=for-the-badge&logo=zabbix&logoColor=white" alt="Zabbix" />
 </p>
 
-### 💾 Modern Development &amp; Services
+### 💾 Databases, Services &amp; Scripting
 <p align="left">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node" />
-  <img src="https://img.shields.io/badge/Three.js-ffffff?style=for-the-badge&logo=three.js&logoColor=black" alt="Three.js" />
-  <img src="https://img.shields.io/badge/Framer_Motion-00C5FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
   <img src="https://img.shields.io/badge/Nginx_Engine-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
 </p>
-
----
-
-## 📈 SYSTEMS &amp; RELIABILITY ENGINEERING CHRONICLES
-
-### 🟢 Site Reliability Engineer — PubMatic (Pune, India)
-> **Period:** June 2025 – Present  
-> **Key Metric:** 99.99% System Uptime  
-> **Infrastructure Scale:** Managing 15,000+ servers in a high-volume, low-latency production ad-tech environment.  
-
-*   **AI Incident Responder:** Architected a proactive self-healing incident response helper utilizing a **Retrieval-Augmented Generation (RAG)** pipeline backed by a **Qdrant Vector Database**.
-*   **MTTR Reduction:** Decreased platform Mean Time to Resolve (MTTR) by **30%** via automation-driven incident workflows.
-*   **Incident Management:** Serving as primary Severity-1 on-call SRE Incident Commander and platform reliability champion.
-
----
-
-### 🟡 DevOps Engineer — LogiNext (Mumbai, India)
-> **Period:** December 2022 – June 2025  
-> **Key Metric:** 70% overall operational cost efficiency  
-
-*   **RTO Optimization:** Reduced database Recovery Time Objective (RTO) by **70%** through robust MongoDB and MySQL multi-region disaster recovery configurations.
-*   **CI/CD Database Automation:** Eliminated **80% of manual effort** by automating database schema migration pipelines.
-*   **Cloud FinOps:** Generated **30% cloud cost savings** through Graviton processor migrations and storage capacity optimization.
-*   **SLA Compliance:** Maintained a **99% SLA resolution rate** for high-priority engineering incidents.
 
 ---
 
@@ -187,5 +146,5 @@ I leverage a highly optimized, modern toolchain focused on extreme throughput, h
 ---
 
 <p align="center">
-  <sub>Console constructed by <a href="https://github.com/pawangond">pawangond</a>. Dynamic keyframe render active.</sub>
+  <sub>Console constructed by <a href="https://github.com/pawangond">pawangond</a>.</sub>
 </p>
