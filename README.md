@@ -133,18 +133,3 @@ I leverage a highly optimized, modern toolchain focused on extreme throughput, h
 *   A lightweight, reactive SRE bot designed to decrease MTTR by automating incident routing, severity flagging, and instant database log aggregation directly inside Slack.
 *   **Stack:** `AWS Lambda` • `Node.js` • `Slack API` • `CloudWatch`
 
----
-
-## 📊 TELEMETRY &amp; GITHUB STATS
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pawangond&show_icons=true&theme=tokyonight&bg_color=0d1117&title_color=00f5ff&icon_color=8a2be2&text_color=c9d1d9&border_color=1f242c" alt="Pawan's GitHub Stats" width="410" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pawangond&layout=compact&theme=tokyonight&bg_color=0d1117&title_color=00f5ff&icon_color=8a2be2&text_color=c9d1d9&border_color=1f242c" alt="Pawan's Top Languages" width="410" />
-</p>
-
----
-
-<p align="center">
-  <sub>Console constructed by <a href="https://github.com/pawangond">pawangond</a>.</sub>
-</p>
