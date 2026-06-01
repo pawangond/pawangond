@@ -112,6 +112,65 @@ An organized, highly optimized toolchain focused on continuous deployment, telem
 
 ---
 
+## 🛠️ THE SRE OPERATIONAL TOOLKIT
+
+A curated collection of production-grade engineering tools designed for standardizing, dissecting, and optimizing infrastructure elements. Hosted live at [**pawangond.com/tools**](https://pawangond.com/tools).
+
+<div align="center">
+  <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
+    <thead>
+      <tr style="background-color: #161b22; border-bottom: 2px solid #1f242c;">
+        <th align="left" style="padding: 12px; color: #00f5ff; font-family: -apple-system, sans-serif;">🚀 TELEMETRY &amp; OPERATIONAL PRODUCTS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 16px; line-height: 1.6;">
+          <table width="100%" style="border-collapse: collapse; border: none; background-color: transparent;">
+            <!-- Row 1 -->
+            <tr>
+              <td width="50%" style="padding: 10px; border: none; vertical-align: top;">
+                <font color="#00f5ff"><b>📊 SAR Stats Visualizer</b></font> <a href="https://pawangond.com/tools/sar-stats"><code>[Launch ↗️]</code></a><br />
+                <font size="2" color="#8b949e">Upload raw <code>sar -A</code> activity logs and instantly generate dynamic performance telemetry charts for CPU, Memory, disk IO, and Network bottlenecks.</font><br />
+                <font size="1" color="#58a6ff"><code>[sar -A raw data] ➡️ [Telemetry Analytics Engine] ➡️ [📊 Performance Graphs]</code></font>
+              </td>
+              <td width="50%" style="padding: 10px; border: none; vertical-align: top;">
+                <font color="#39ff14"><b>📐 AI Flow Diagram Console</b></font> <a href="https://pawangond.com/tools/ai-flow"><code>[Launch ↗️]</code></a><br />
+                <font size="2" color="#8b949e">Build and edit system architecture maps using drag-and-drop components, or generate standard designs instantly using prompt-driven AI templates.</font><br />
+                <font size="1" color="#39ff14"><code>[Architect Prompt] ➡️ [Generative AI Node] ➡️ [🖥️ Visual System Topology]</code></font>
+              </td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+              <td width="50%" style="padding: 10px; border: none; vertical-align: top;">
+                <font color="#8a2be2"><b>⏱️ Cron Expression Engine</b></font> <a href="https://pawangond.com/tools/cron"><code>[Launch ↗️]</code></a><br />
+                <font size="2" color="#8b949e">Translate complex cron parameters into clear, human-readable execution intervals to verify operational check run schedules.</font><br />
+                <font size="1" color="#8a2be2"><code>[*/15 * * * *] ➡️ [Cron Translation Engine] ➡️ ["Every 15 minutes, infinitely"]</code></font>
+              </td>
+              <td width="50%" style="padding: 10px; border: none; vertical-align: top;">
+                <font color="#ffaa00"><b>🔌 REST HTTP Client</b></font> <a href="https://pawangond.com/tools/http-client"><code>[Launch ↗️]</code></a><br />
+                <font size="2" color="#8b949e">Execute full REST API requests natively in-browser or utilizing dedicated server proxy options for direct microservice validation.</font><br />
+                <font size="1" color="#ffaa00"><code>[GET /healthcheck] ➡️ [Proxy Telemetry Router] ➡️ [JSON Status Payload]</code></font>
+              </td>
+            </tr>
+          </table>
+          <hr style="border: 1px solid #1f242c; margin: 15px 0;" />
+          <p><b>Core Operations Micro-Utilities:</b></p>
+          <ul>
+            <li><b><a href="https://pawangond.com/tools/diffchecker">🔍 Log Diffchecker</a></b>: Highlight line additions, removals, and modifications in configurations, texts, or logs.</li>
+            <li><b><a href="https://pawangond.com/tools/timezone-converter">🌐 Timezone Epoch Bridge</a></b>: Translate UNIX system epochs, ISO strings, and target global system zones in real-time.</li>
+            <li><b><a href="https://pawangond.com/tools/encode-decode">🔗 Base64 &amp; URL Encoder</a></b>: Perform clean URL encoding, Base64 translations, and HTML entity parsing.</li>
+            <li><b><a href="https://pawangond.com/tools/json-formatter">📦 JSON Structure Explorer</a></b>: Format, validate, and tree-explore massive JSON data payloads.</li>
+            <li><b><a href="https://pawangond.com/tools/password-generator">🔐 SRE Entropy Keygen</a></b>: Build secure platform passwords utilizing customized entropy and character criteria.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
 ## 🏆 CERTIFICATIONS
 
 *   **Microsoft Certified:** Azure AI Fundamentals
