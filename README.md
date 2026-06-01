@@ -1,15 +1,15 @@
 # Pawan Gond
 ### Site Reliability Engineer • DevOps Specialist
 
-> "I build systems that heal themselves."
+> **"I build systems that heal themselves."**
 
 [![Website](https://img.shields.io/badge/pawangond.com-00f5ff?style=for-the-badge&logo=google-chrome&logoColor=05070a)](https://pawangond.com) [![Email](https://img.shields.io/badge/contact@pawangond.com-8a2be2?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@pawangond.com) [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pawangond)
 
 ---
 
-## 📊 SYSTEM METRICS &amp; INFRASTRUCTURE SCALE
+## 📈 INFRASTRUCTURE SCALE &amp; OPERATIONAL TELEMETRY
 
-A telemetry overview of my SRE &amp; DevOps operational impact across high-throughput production runtimes.
+A high-impact operational overview of my SRE and DevOps achievements across high-throughput production runtimes.
 
 <div align="center">
   <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
@@ -35,7 +35,7 @@ A telemetry overview of my SRE &amp; DevOps operational impact across high-throu
         <td align="center" style="padding: 15px; border: 1px solid #1f242c; line-height: 1.6;">
           <font size="5" color="#ffffff"><b>70%</b></font><br />
           <font size="3" color="#8b949e">Cost Optimization Achieved</font><br />
-          <font size="2" color="#8a2be2"><i>Graviton Migrations &amp; Capacity Tuning</i></font>
+          <font size="2" color="#8a2be2"><i>Graviton Migrations &amp; Storage Tuning</i></font>
         </td>
       </tr>
       <tr>
@@ -61,57 +61,59 @@ A telemetry overview of my SRE &amp; DevOps operational impact across high-throu
 
 ---
 
-## 🛠️ TECHNICAL ARSENAL &amp; SKILLS
+## 🛠️ PLATFORM ENGINEERING ARSENAL
 
-I leverage a highly optimized, modern toolchain focused on extreme throughput, high availability, and cohesive SRE/DevOps engineering.
+An organized, highly optimized toolchain focused on continuous deployment, telemetry observability, and high availability systems.
 
-### 🌐 Cloud &amp; Core Infrastructure Orchestration
-<p align="left">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="K8s" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Linux_Administration-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Enterprise_Networking-00599C?style=for-the-badge&logo=cisco&logoColor=white" alt="Networking" />
-</p>
-
-### ⚙️ Infrastructure as Code &amp; CI/CD Pipelines
-<p align="left">
-  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
-  <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible" />
-  <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab CI" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/ArgoCD-F3F4F6?style=for-the-badge&logo=argo&logoColor=black" alt="ArgoCD" />
-  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
-  <img src="https://img.shields.io/badge/Bash_Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-</p>
-
-### 📊 Observability &amp; Telemetry
-<p align="left">
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus" />
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" />
-  <img src="https://img.shields.io/badge/OpenTelemetry-00f5ff?style=for-the-badge&logo=opentelemetry&logoColor=black" alt="OTel" />
-  <img src="https://img.shields.io/badge/Elasticsearch_Kibana-005571?style=for-the-badge&logo=elastic&logoColor=white" alt="ELK" />
-  <img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" alt="Datadog" />
-  <img src="https://img.shields.io/badge/Zabbix-E1251B?style=for-the-badge&logo=zabbix&logoColor=white" alt="Zabbix" />
-</p>
-
-### 💾 Databases, Services &amp; Scripting
-<p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/Nginx_Engine-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
-</p>
+<div align="center">
+  <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
+    <tbody>
+      <!-- Row 1: Cloud and IaC -->
+      <tr>
+        <td width="50%" style="padding: 15px; border: 1px solid #1f242c; vertical-align: top; line-height: 1.8;">
+          <font color="#00f5ff"><b>🌐 Cloud &amp; Core Infrastructure</b></font><br />
+          <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="AWS" />
+          <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white" alt="GCP" />
+          <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="K8s" />
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+          <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+        </td>
+        <td width="50%" style="padding: 15px; border: 1px solid #1f242c; vertical-align: top; line-height: 1.8;">
+          <font color="#39ff14"><b>⚙️ Infrastructure as Code &amp; CI/CD</b></font><br />
+          <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
+          <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" alt="Ansible" />
+          <img src="https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab CI" />
+          <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+          <img src="https://img.shields.io/badge/ArgoCD-F3F4F6?style=flat-square&logo=argo&logoColor=black" alt="ArgoCD" />
+        </td>
+      </tr>
+      <!-- Row 2: Observability and Databases -->
+      <tr>
+        <td width="50%" style="padding: 15px; border: 1px solid #1f242c; vertical-align: top; line-height: 1.8;">
+          <font color="#8a2be2"><b>📊 Observability &amp; Telemetry</b></font><br />
+          <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" />
+          <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
+          <img src="https://img.shields.io/badge/OpenTelemetry-00f5ff?style=flat-square&logo=opentelemetry&logoColor=black" alt="OTel" />
+          <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elastic&logoColor=white" alt="ELK" />
+          <img src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white" alt="Datadog" />
+        </td>
+        <td width="50%" style="padding: 15px; border: 1px solid #1f242c; vertical-align: top; line-height: 1.8;">
+          <font color="#ffaa00"><b>💾 Databases &amp; Services</b></font><br />
+          <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+          <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+          <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+          <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
+          <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ---
 
 ## 🏆 CERTIFICATIONS
+
 *   **Microsoft Certified:** Azure AI Fundamentals
 *   **Google Cloud:** Computing Foundations with Kubernetes
 *   **Python 3:** Advanced Certified Developer
@@ -120,16 +122,53 @@ I leverage a highly optimized, modern toolchain focused on extreme throughput, h
 
 ## 📂 FEATURED ENGINEERING SYSTEMS
 
+Highly scalable platform tools and serverless automations built to minimize MTTR and establish active resiliency loops.
+
 ### 🚀 KubeFlow Pipelines (Multi-Cluster Engine)
-*   An automated, highly reliable multi-cluster deployment pipeline orchestrating continuous delivery across isolated environments.
-*   **Flow Schema:** `Developer Commit` ➡️ `GitHub Actions` ➡️ `Docker Build` ➡️ `ArgoCD Reconciliation` ➡️ `Kubernetes Pod Rollout`
-*   **Stack:** `Go` • `Kubernetes` • `ArgoCD` • `Docker`
+<div align="center">
+  <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
+    <tr>
+      <td style="padding: 16px; line-height: 1.6;">
+        <font size="3" color="#00f5ff"><b>Multi-Cluster Continuous Delivery Pipeline</b></font><br />
+        An automated, highly reliable multi-cluster deployment pipeline orchestrating continuous delivery across isolated environments.<br />
+        <br />
+        <b>Pipeline Flow Schema:</b><br />
+        <code>Developer Commit</code> ➡️ <code>GitHub Actions</code> ➡️ <code>Docker Build</code> ➡️ <code>ArgoCD Reconciliation</code> ➡️ <code>Kubernetes Pod Rollout</code><br />
+        <br />
+        <code>Go</code> • <code>Kubernetes</code> • <code>ArgoCD</code> • <code>Docker</code>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br />
 
 ### 📊 Observability Telemetry Stack
-*   A high-performance logging, distributed tracing, and metrics collection stack structured to handle extreme throughput volumes with zero telemetry losses.
-*   **Stack:** `Prometheus` • `Grafana` • `OpenTelemetry` • `Elasticsearch` • `Kibana`
+<div align="center">
+  <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
+    <tr>
+      <td style="padding: 16px; line-height: 1.6;">
+        <font size="3" color="#39ff14"><b>High-Performance Monitoring &amp; Distributed Tracing</b></font><br />
+        A unified telemetry logging, distributed tracing, and metrics collection stack structured to handle extreme ad-tech throughput volumes with zero packet losses.<br />
+        <br />
+        <code>Prometheus</code> • <code>Grafana</code> • <code>OpenTelemetry</code> • <code>Elasticsearch</code> • <code>Kibana</code>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br />
 
 ### 🤖 Serverless SRE Bot (Slack ChatOps)
-*   A lightweight, reactive SRE bot designed to decrease MTTR by automating incident routing, severity flagging, and instant database log aggregation directly inside Slack.
-*   **Stack:** `AWS Lambda` • `Node.js` • `Slack API` • `CloudWatch`
-
+<div align="center">
+  <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
+    <tr>
+      <td style="padding: 16px; line-height: 1.6;">
+        <font size="3" color="#8a2be2"><b>AWS Lambda ChatOps Automation Bot</b></font><br />
+        A lightweight, reactive serverless agent designed to decrease MTTR by automating incident routing, severity flagging, and instant database log aggregation directly inside Slack channels.<br />
+        <br />
+        <code>AWS Lambda</code> • <code>Node.js</code> • <code>Slack API</code> • <code>CloudWatch</code>
+      </td>
+    </tr>
+  </table>
+</div>
