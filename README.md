@@ -1,12 +1,14 @@
-# <!-- Dynamic header layout -->
+# <!-- High-End Observability Console Banner linked to Profile Home to prevent media viewers -->
 <p align="center">
-  <img src="./assets/terminal_banner.svg" width="850" alt="Pawan Gond - SRE &amp; Creative Technologist Console" />
+  <a href="https://github.com/pawangond">
+    <img src="./assets/terminal_banner.svg" width="850" alt="Pawan Gond - SRE Observability Console" />
+  </a>
 </p>
 
 <h1 align="center">Pawan Gond</h1>
 
 <p align="center">
-  <b>Site Reliability Engineer • DevOps Architect • Senior Creative Technologist</b><br />
+  <b>Site Reliability Engineer • DevOps Specialist • Senior Creative Technologist</b><br />
   <i>"I build systems that heal themselves." • Bridging the gap between brilliant code and stunning design.</i>
 </p>
 
@@ -22,32 +24,7 @@
 
 ---
 
-## 📈 PROACTIVE SELF-HEALING ARCHITECTURE
-
-Here is the operational schematic of the automated **Incident Triage &amp; Self-Healing Pipeline** I architected, demonstrating the dynamic synergy between reliability telemetry and modern cloud execution.
-
-```mermaid
-graph TD
-    %% Base Color Styling for Dark Mode Compatibility
-    style A fill:#161b22,stroke:#ff3366,stroke-width:2px,color:#ffffff
-    style B fill:#161b22,stroke:#00f5ff,stroke-width:1.5px,color:#ffffff
-    style C fill:#161b22,stroke:#8a2be2,stroke-width:1.5px,color:#ffffff
-    style D fill:#161b22,stroke:#39ff14,stroke-width:2px,color:#ffffff
-    style E fill:#0d1117,stroke:#1f242c,stroke-width:1px,color:#8b949e
-    style F fill:#161b22,stroke:#00f5ff,stroke-width:1.5px,color:#ffffff
-
-    A[⚠️ Severe-1 Incident Spike Detected] -->|Telemetry Alerts| B(📊 Prometheus & Grafana Monitoring)
-    B -->|Webhook Dispatch| C(💬 Slack-ChatOps SRE Bot)
-    C -->|Trigger Action| F[🚀 Serverless SRE Bot / AWS Lambda]
-    F -->|RAG Vector Query| E[(🧠 Qdrant Vector Database)]
-    E -->|Fetch Resolution Runbook| F
-    F -->|Hot-Patch Payload Rollout| D[✅ Hot-Fix Auto-Applied & Restored]
-    D -.->|MTTR Reduced by 30%| A
-```
-
----
-
-## 📊 SRE OBSERVABILITY METRICS
+## 📊 SYSTEM METRICS &amp; IMPACT
 
 <div align="center">
   <table width="100%" style="border-collapse: collapse; border: 1px solid #1f242c; background-color: #0d1117;">
@@ -68,12 +45,12 @@ graph TD
         <td align="center" style="padding: 15px; border: 1px solid #1f242c; line-height: 1.6;">
           <font size="5" color="#ffffff"><b>99.99%</b></font><br />
           <font size="3" color="#8b949e">Global System Uptime</font><br />
-          <font size="2" color="#39ff14"><i>Severity-1 Incident Commander Lead</i></font>
+          <font size="2" color="#39ff14"><i>Severity-1 Incident Commander</i></font>
         </td>
         <td align="center" style="padding: 15px; border: 1px solid #1f242c; line-height: 1.6;">
           <font size="5" color="#ffffff"><b>70%</b></font><br />
           <font size="3" color="#8b949e">Cost Optimization Achieved</font><br />
-          <font size="2" color="#8a2be2"><i>Graviton Migrations &amp; Capacity Design</i></font>
+          <font size="2" color="#8a2be2"><i>Graviton Migrations &amp; Storage Tuning</i></font>
         </td>
       </tr>
       <tr>
@@ -85,12 +62,12 @@ graph TD
         <td align="center" style="padding: 15px; border: 1px solid #1f242c; line-height: 1.6;">
           <font size="5" color="#ffffff"><b>80%</b></font><br />
           <font size="3" color="#8b949e">Manual Toils Eliminated</font><br />
-          <font size="2" color="#39ff14"><i>Automated Database CI/CD Schema</i></font>
+          <font size="2" color="#39ff14"><i>Automated Database Schema Pipelines</i></font>
         </td>
         <td align="center" style="padding: 15px; border: 1px solid #1f242c; line-height: 1.6;">
           <font size="5" color="#ffffff"><b>99%</b></font><br />
           <font size="3" color="#8b949e">SLA Resolution Rate</font><br />
-          <font size="2" color="#8a2be2"><i>High-Priority Production Incidents</i></font>
+          <font size="2" color="#8a2be2"><i>High-Priority Platform Incidents</i></font>
         </td>
       </tr>
     </tbody>
@@ -99,73 +76,9 @@ graph TD
 
 ---
 
-## 💻 INTERACTIVE SRE CHATOPS SIMULATOR
-
-Click the diagnostic console commands below to execute real-time terminal diagnostics and trigger automated self-healing resolution sequences in the simulated sandbox shell.
-
-<blockquote>
-<pre>
-pawangond@reliability-node:~$ system_diagnostics --menu
-===========================================================
-               SRE CHATOPS INTERACTIVE CONSOLE
-===========================================================
-Select a node log query or trigger automated self-healing:
-</pre>
-
-<!-- NESTED DETAILS FOR COMMAND 1 -->
-<details style="margin-left: 20px; margin-bottom: 10px;">
-<summary><b>💾 <code>&gt; [1] query_cluster_scale --hosts</code></b></summary>
-<br />
-<pre>
-Executing: query_cluster_scale --hosts...
-[Telemetry] Contacting PubMatic bare-metal production nodes...
-[Telemetry] Host scan complete: 15,394 active servers registered.
-[Telemetry] Availability Index: 99.99% UP
-[Telemetry] Network Topology: Multi-Region Active-Active Mesh
-[STATUS] All telemetry agents reporting healthy.
-</pre>
-</details>
-
-<!-- NESTED DETAILS FOR COMMAND 2 -->
-<details style="margin-left: 20px; margin-bottom: 10px;">
-<summary><b>⚡ <code>&gt; [2] trigger_ai_self_heal --incident-id S1-9481</code></b></summary>
-<br />
-<pre>
-Executing: trigger_ai_self_heal --incident-id S1-9481...
-[ALERT] Severity-1 Anomaly: 340ms latency threshold breached on ap-southeast-1.
-[CHAT] Invoking AWS Lambda ChatOps bot payload...
-[RAG] Vector database search initiated against Qdrant DB.
-[RAG] Retrieved matching runbook: "Route-Rebalance-SE-v2" (Simulated Confidence: 98%)
-[HEAL] Deploying routing failover block...
-[SUCCESS] Route updated. Latency stabilized to 14ms.
-[STATUS] MTTR minimized by 30%. Incident S1-9481 marked RESOLVED.
-</pre>
-</details>
-
-<!-- NESTED DETAILS FOR COMMAND 3 -->
-<details style="margin-left: 20px; margin-bottom: 10px;">
-<summary><b>💵 <code>&gt; [3] calculate_finops_savings --year 2025</code></b></summary>
-<br />
-<pre>
-Executing: calculate_finops_savings --year 2025...
-[FinOps] Auditing AWS CloudWatch compute and storage metrics...
-[FinOps] Calculating Graviton processor architecture savings...
-[FinOps] Scanning MySQL and MongoDB multi-region disaster recovery storage tiers...
-===========================================================
-            FINOPS SAVINGS REPORT (LogiNext Infrastructure)
-===========================================================
-- AWS Graviton Migration Savings:     30% Compute Expense Reduction
-- Database Block Storage DR Savings:  40% Storage Cap Optimization
-- Total Cost-to-Performance Ratio:    70% Cost Efficiency Achieved.
-</pre>
-</details>
-</blockquote>
-
----
-
 ## 🛠️ TECHNICAL ARSENAL &amp; SKILLS
 
-To maintain high availability and visual excellence, I leverage a unified, modern toolchain. My configurations are optimized for speed, reliability, and visual coherence.
+I leverage a highly optimized, modern toolchain focused on extreme throughput, high availability, and cohesive engineering designs.
 
 ### 🌐 Cloud &amp; Core Infrastructure Orchestration
 <p align="left">
@@ -215,55 +128,27 @@ To maintain high availability and visual excellence, I leverage a unified, moder
 
 ---
 
-## 📈 CAREER INCIDENT POST-MORTEMS &amp; UPGRADES
+## 📈 SYSTEMS &amp; RELIABILITY ENGINEERING CHRONICLES
 
-Below are the detailed engineering logs of my contributions and operational impacts over my professional journey. Click the nodes to inspect.
-
-### 🟢 [ACTIVE RUNTIME] SRE — PubMatic (Pune, India)
+### 🟢 Site Reliability Engineer — PubMatic (Pune, India)
 > **Period:** June 2025 – Present  
-> **Primary Role:** Severity-1 Incident Commander &amp; Infrastructure Reliability Architect  
-> **Runtime Scale:** 15,000+ Distributed High-Throughput Servers  
+> **Key Metric:** 99.99% System Uptime  
+> **Infrastructure Scale:** Managing 15,000+ servers in a high-volume, low-latency production ad-tech environment.  
 
-<details>
-<summary><b>🔍 Expand Operational Post-Mortem &amp; Upgrades</b></summary>
-<br />
-
-#### 🛠️ AI-Assisted Incident Responder
-*   **Context:** Downtime in high-throughput ad-tech environments directly translates to massive revenue impacts. Manual runbook searches delayed MTTR.
-*   **Resolution:** Architected a proactive self-healing incident response helper utilizing a **Retrieval-Augmented Generation (RAG)** pipeline backed by a **Qdrant Vector Database**.
-*   **Outcome:** Decreased Mean Time to Resolve (MTTR) by **30%** via automation-driven incident triage workflows and instant AI-driven root-cause alerts.
-
-#### 📢 On-Call Incident Command
-*   **Responsibility:** Designated Primary Severity-1 on-call Incident Commander across the global 15k+ server runtime.
-*   **Metric Achieved:** Led teams through high-pressure recovery, maintaining **99.99% system availability** for millions of requests per second.
-</details>
+*   **AI Incident Responder:** Architected a proactive self-healing incident response helper utilizing a **Retrieval-Augmented Generation (RAG)** pipeline backed by a **Qdrant Vector Database**.
+*   **MTTR Reduction:** Decreased platform Mean Time to Resolve (MTTR) by **30%** via automation-driven incident workflows.
+*   **Incident Management:** Serving as primary Severity-1 on-call SRE Incident Commander and platform reliability champion.
 
 ---
 
-### 🟡 [ARCHIVED BUILD] DevOps Engineer — LogiNext (Mumbai, India)
+### 🟡 DevOps Engineer — LogiNext (Mumbai, India)
 > **Period:** December 2022 – June 2025  
-> **Primary Role:** Cloud FinOps Architect &amp; CI/CD Pipeline Automation Engineer  
-> **Archived Health:** Decommissioned with 70% overall operational cost efficiency.  
+> **Key Metric:** 70% overall operational cost efficiency  
 
-<details>
-<summary><b>🔍 Expand Optimization Log &amp; Post-Mortem</b></summary>
-<br />
-
-#### ⚡ Recovery Time Objective (RTO) Minimization
-*   **Context:** Disaster scenarios in key regions required rapid failovers with minimal data loss thresholds.
-*   **Resolution:** Re-engineered and automated multi-region disaster recovery replication pipelines across MongoDB and MySQL database layers.
-*   **Outcome:** Slashed database Recovery Time Objective (RTO) by **70%**, guaranteeing minimal data loss boundaries.
-
-#### 🔄 Schema Migration Automation
-*   **Context:** Manual database deployments delayed developer release cycles and introduced human errors.
-*   **Resolution:** Created automated CI/CD database schema migration pipelines, removing manual interference.
-*   **Outcome:** Eliminated **80% of manual tasks** and expedited weekly deployment speeds.
-
-#### 💵 Cloud FinOps &amp; Infrastructure Optimization
-*   **Resolution:** Led cross-region instance migration campaigns from legacy architectures to high-performance Graviton processor units; optimized block storages and S3 tier structures.
-*   **Outcome:** Realized a **30% direct reduction** in cloud operational costs.
-*   **Compliance:** Maintained a **99% SLA resolution rate** on developer issues and high-severity platform tickets.
-</details>
+*   **RTO Optimization:** Reduced database Recovery Time Objective (RTO) by **70%** through robust MongoDB and MySQL multi-region disaster recovery configurations.
+*   **CI/CD Database Automation:** Eliminated **80% of manual effort** by automating database schema migration pipelines.
+*   **Cloud FinOps:** Generated **30% cloud cost savings** through Graviton processor migrations and storage capacity optimization.
+*   **SLA Compliance:** Maintained a **99% SLA resolution rate** for high-priority engineering incidents.
 
 ---
 
@@ -274,7 +159,7 @@ Below are the detailed engineering logs of my contributions and operational impa
 
 ---
 
-## 📂 FEATURED SYSTEMS &amp; SCHEMATICS
+## 📂 FEATURED ENGINEERING SYSTEMS
 
 ### 🚀 KubeFlow Pipelines (Multi-Cluster Engine)
 *   An automated, highly reliable multi-cluster deployment pipeline orchestrating continuous delivery across isolated environments.
@@ -282,7 +167,7 @@ Below are the detailed engineering logs of my contributions and operational impa
 *   **Stack:** `Go` • `Kubernetes` • `ArgoCD` • `Docker`
 
 ### 📊 Observability Telemetry Stack
-*   A premium, high-performance logging, distributed tracing, and metrics collection stack structured to handle extreme throughput volumes with zero telemetry losses.
+*   A high-performance logging, distributed tracing, and metrics collection stack structured to handle extreme throughput volumes with zero telemetry losses.
 *   **Stack:** `Prometheus` • `Grafana` • `OpenTelemetry` • `Elasticsearch` • `Kibana`
 
 ### 🤖 Serverless SRE Bot (Slack ChatOps)
